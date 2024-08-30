@@ -1,0 +1,126 @@
+
+/* below 1520 is desktop device */
+@media(max-width: 95em) {
+        .main-nav{
+            /* margin-right: 3rem; */
+        }
+}
+
+
+/* below 1440 is small desktop device */
+@media(max-width: 84em) {
+    .hero{
+        /* max-width: 120rem; */
+        }
+        .heading{
+            font-size: 3rem;
+        }
+        .hero-img-box{
+            margin-right: 5rem;
+        }
+}
+/* below 1200 is small desktop device */
+@media(max-width: 75em) {
+    .main-nav{
+        /* margin-right: 2rem; */
+    }
+}
+
+/* below 1024 is landscape tablets */
+@media(max-width: 64em) {
+    .logos{
+        margin-left: 8rem;
+    }
+    html{
+        /* 9px/16px so 60em * 16 = 960 */
+        font-size: 56%;
+    }
+    .main-nav-list{
+        gap: 1.8rem;
+    }
+}
+/* below 944 is tablets */
+@media(max-width: 59em) {
+    .main-nav-list{
+        gap: 5rem;
+        flex-direction: column;
+        gap: 4.8rem;
+        font-weight: 1000;
+    }
+    html{
+        /* 8px/16px = 0.5 =50% */
+        font-size: 40%;
+    }
+    .hero{
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .hero-img{
+        width: 60%;
+    }
+    .heading-second{
+        text-align: center;
+    }
+    .step-box-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .section-cta{
+        margin: 0 5rem;
+     }
+     .col-5{
+        max-width: 80rem;
+        gap: 3rem;
+     }
+     .step-img-box{
+        width: 50rem;
+     }
+     .step-box-1,.step-box-3{
+        margin-left: auto;
+        margin-right: auto;
+     }
+     /* Mobile Novigation bar*/
+     .nav-menu{
+        display: block;
+    }
+    .main-nav{
+        background-color: rgba(255, 255, 255, 0.63);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transition: all 0.5s;
+
+        transform: translateX(100%);
+        /* display: none; */
+    }
+    .nav-open .main-nav{
+        opacity: 1;
+        transform: translateX(0%);
+    }
+    .main-nav-link{
+        font-size: 3rem;
+    }
+    .nav-open .nav-menu-bar[name="close-outline"]{
+        display: block;
+    }
+    .nav-open .nav-menu-bar[name="menu-outline"]{
+        display: none;
+    }
+
+}
+@media(max-width: 32.5em) {
+    .pandafoods{
+        padding-left: 5rem;
+    }
+    .footer-font{
+        padding-right: 3rem;
+    }
+    .col-5{
+        display: grid;
+        gap: 0.1rem;
+      }
+}
+
+
